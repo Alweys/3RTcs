@@ -1,0 +1,14 @@
+D:\učenici\3RT\Matija Trstenjak\Objektno programiranje\29-09-2021\29_09_2021\29_09_2021\bin\Debug\netcoreapp3.1\29_09_2021.exe
+D:\učenici\3RT\Matija Trstenjak\Objektno programiranje\29-09-2021\29_09_2021\29_09_2021\bin\Debug\netcoreapp3.1\29_09_2021.deps.json
+D:\učenici\3RT\Matija Trstenjak\Objektno programiranje\29-09-2021\29_09_2021\29_09_2021\bin\Debug\netcoreapp3.1\29_09_2021.runtimeconfig.json
+D:\učenici\3RT\Matija Trstenjak\Objektno programiranje\29-09-2021\29_09_2021\29_09_2021\bin\Debug\netcoreapp3.1\29_09_2021.runtimeconfig.dev.json
+D:\učenici\3RT\Matija Trstenjak\Objektno programiranje\29-09-2021\29_09_2021\29_09_2021\bin\Debug\netcoreapp3.1\29_09_2021.dll
+D:\učenici\3RT\Matija Trstenjak\Objektno programiranje\29-09-2021\29_09_2021\29_09_2021\bin\Debug\netcoreapp3.1\29_09_2021.pdb
+D:\učenici\3RT\Matija Trstenjak\Objektno programiranje\29-09-2021\29_09_2021\29_09_2021\obj\Debug\netcoreapp3.1\29_09_2021.csproj.AssemblyReference.cache
+D:\učenici\3RT\Matija Trstenjak\Objektno programiranje\29-09-2021\29_09_2021\29_09_2021\obj\Debug\netcoreapp3.1\29_09_2021.GeneratedMSBuildEditorConfig.editorconfig
+D:\učenici\3RT\Matija Trstenjak\Objektno programiranje\29-09-2021\29_09_2021\29_09_2021\obj\Debug\netcoreapp3.1\29_09_2021.AssemblyInfoInputs.cache
+D:\učenici\3RT\Matija Trstenjak\Objektno programiranje\29-09-2021\29_09_2021\29_09_2021\obj\Debug\netcoreapp3.1\29_09_2021.AssemblyInfo.cs
+D:\učenici\3RT\Matija Trstenjak\Objektno programiranje\29-09-2021\29_09_2021\29_09_2021\obj\Debug\netcoreapp3.1\29_09_2021.csproj.CoreCompileInputs.cache
+D:\učenici\3RT\Matija Trstenjak\Objektno programiranje\29-09-2021\29_09_2021\29_09_2021\obj\Debug\netcoreapp3.1\29_09_2021.dll
+D:\učenici\3RT\Matija Trstenjak\Objektno programiranje\29-09-2021\29_09_2021\29_09_2021\obj\Debug\netcoreapp3.1\29_09_2021.pdb
+D:\učenici\3RT\Matija Trstenjak\Objektno programiranje\29-09-2021\29_09_2021\29_09_2021\obj\Debug\netcoreapp3.1\29_09_2021.genruntimeconfig.cache

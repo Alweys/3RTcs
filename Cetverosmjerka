@@ -1,0 +1,136 @@
+using System;
+
+namespace _6._10._2021
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int N = 20;
+            int x = 9, y = 8;
+            char[,] Polje = new char[50, 50];
+            Random rand = new Random();
+
+            string[] Rijeci = new string[5];
+            
+            for(int i=0; i < N; i++)
+            {
+                for(int j=0; j < N; j++)
+                {
+                    Polje[i, j] = '*';
+                }
+            }
+
+            Rijeci[0] = "AUTO";
+            Rijeci[1] = "VODA";
+            Rijeci[2] = "BROD";
+            Rijeci[3] = "OBLAK";
+            Rijeci[4] = "KISA";
+
+            for (int i = 0; i < 2; i++)
+            {
+                if(i == 0)
+                {
+                    char[] rijec = Rijeci[i].ToCharArray();
+                    
+                    for(int j=0; j<Rijeci[i].Length;j++)
+                    {
+                        Polje[x, y + j] = rijec[j];
+                    }
+                }
+                else
+                {
+                    char[] Proslarijec = Rijeci[i-1].ToCharArray();
+                    char[] rijec = Rijeci[i].ToCharArray();
+                    int[] indexi = new int[5];
+
+                    int smjer = rand.Next(0, 2);
+                    int b = 0;
+
+                    for (int j = 0; j < Rijeci[i].Length; j++)
+                    {
+                        int index = Rijeci[i - 1].IndexOf(rijec[j]);
+
+                        if (index != -1)
+                        {
+                            indexi[b] = index;
+                            b++;
+                        }
+                    }
+
+                    Console.WriteLine("Moguca slova: " + b);
+
+                    int indexSlova = rand.Next(0, b);
+
+                    int xx = x, yy;
+
+                    yy = y + indexi[indexSlova];
+
+
+
+                    if (smjer == 0)
+                        Console.WriteLine("gore");
+                    else
+                        Console.WriteLine("dole");
+                    Console.WriteLine("indexSlova " + indexSlova);
+                    Console.WriteLine("x " + xx);
+                    Console.WriteLine("y " + yy);
+
+                    if(smjer == 0) // gore
+                    {
+                        int indexPocSlova = 0;
+                        for (int j = 0; j < Rijeci[i].Length; j++)
+                        {
+                            if (rijec[j] == Proslarijec[indexi[indexSlova]])
+                            {
+
+                                Console.WriteLine(rijec[j] + " " + Proslarijec[indexi[indexSlova]] + " " + j);
+                                indexPocSlova = j;
+                            }
+                        }
+
+                        for(int j = 0; j < Rijeci[i].Length; j++)
+                        {
+                            if (j == indexPocSlova)
+                                continue;
+
+                            Polje[xx + indexPocSlova - j, yy] = rijec[j];
+                        }
+
+                    }
+                    else // dole
+                    {
+                        int indexPocSlova = 0;
+                        for (int j = 0; j < Rijeci[i].Length; j++)
+                        {
+                            if (rijec[j] == Proslarijec[indexi[indexSlova]])
+                            {
+
+                                Console.WriteLine(rijec[j] + " " + Proslarijec[indexi[indexSlova]] + " " + j);
+                                indexPocSlova = j;
+                            }
+                        }
+
+                        for (int j = 0; j < Rijeci[i].Length; j++)
+                        {
+                            if (j == indexPocSlova)
+                                continue;
+
+                            Polje[xx - indexPocSlova + j, yy] = rijec[j];
+                        }
+                    }
+                }
+            }
+
+            for (int i = 0; i < N; i++)
+            {
+                for (int j = 0; j < N; j++)
+                {
+                    Console.Write(Polje[i, j]);
+                    Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+using System;
+
+namespace _13._10._2021
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            char[,] Polje = new char[50, 50];
+
+            Random rand = new Random();
+
+            for(int i=0;i<50;i++)
+            {
+                for(int j = 0; j < 50;j++)
+                {
+                    int a = rand.Next(2);
+                    if(a == 1)
+                        Polje[i, j] = (char)rand.Next('a', 'z');
+                    else
+                        Polje[i, j] = (char)rand.Next('A', 'Z');
+                }
+            }
+
+            for (int i = 0; i < 50; i++)
+            {
+                for (int j = 0; j < 50; j++)
+                {
+                    Console.Write(Polje[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+
+
+            string orgNiz;
+
+            orgNiz = Console.ReadLine();
+
+            char[] niz = orgNiz.ToCharArray();
+
+            bool[] pronadeno = new bool[5];
+            int brojac = 0;
+
+            for(int i = 0; i < 50; i++)
+            {
+                for(int j = 0; j < 50; j++)
+                {
+                    for(int k = 0; k < 4; k++)
+                    {
+                        for(int l = 0; l < niz.Length; l++)
+                        {
+                            switch (k)
+                            {
+                                case 0:
+                                    {
+                                        if (i + l < 50)
+                                            if (Polje[i+l, j] == niz[l])
+                                            {
+                                               // Console.WriteLine("Pronadeno slovo: " + niz[l]);
+                                                pronadeno[l] = true;
+                                            }
+                                            else
+                                            {
+                                                pronadeno[l] = false;
+                                            }
+                                            break;
+                                    }
+                                case 1:
+                                    {
+                                        if(j + l < 50)
+                                            if (Polje[i, j+l] == niz[l])
+                                            {
+                                                //Console.WriteLine("Pronadeno slovo: " + niz[l]);
+                                                pronadeno[l] = true;
+                                            }
+                                            else
+                                            {
+                                                pronadeno[l] = false;
+                                            }
+                                        break;
+                                    }
+                                case 2:
+                                    {
+                                        if(i - l > 0)
+                                            if (Polje[i - l, j] == niz[l])
+                                            {
+                                                //Console.WriteLine("Pronadeno slovo: " + niz[l]);
+                                                pronadeno[l] = true;
+                                            }
+                                            else
+                                            {
+                                                pronadeno[l] = false;
+                                            }
+                                        break;
+                                    }
+                                case 3:
+                                    {
+                                        if(j - l > 0)
+                                            if (Polje[i, j - l] == niz[l])
+                                            {
+                                                //Console.WriteLine("Pronadeno slovo: " + niz[l]);
+                                                pronadeno[l] = true;
+                                            }
+                                            else
+                                            {
+                                                pronadeno[l] = false;
+                                            }
+                                        break;
+                                    }
+                                default:
+                                    {
+                                        break;
+                                    }
+                            }
+                        }
+                        bool a = false;
+
+                        for (int l = 0; l < niz.Length; l++)
+                        {
+                            Console.Write("[" + pronadeno[l] + "] ");
+                            if (pronadeno[l] == true)
+                            {
+                                a = true;
+                            }
+                            else
+                            {
+                                a = false;
+                                break;
+                            }
+                        }
+                        Console.WriteLine();
+                        if (a == true)
+                        {
+                           // Console.WriteLine("a = " + a);
+                            brojac++;
+                        }
+                        //Console.WriteLine("-----------");
+                    }
+
+                    
+                }
+            }
+
+            Console.WriteLine(niz);
+            Console.WriteLine("[" + niz + "] Pronaden: " + brojac + " puta");
+        }
+    }
+}

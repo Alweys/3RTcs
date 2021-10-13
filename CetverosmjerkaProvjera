@@ -38,7 +38,7 @@ namespace _13._10._2021
 
             char[] niz = orgNiz.ToCharArray();
 
-            bool[] pronadeno = new bool[5];
+            
             int brojac = 0;
 
             for(int i = 0; i < 50; i++)
@@ -47,6 +47,7 @@ namespace _13._10._2021
                 {
                     for(int k = 0; k < 4; k++)
                     {
+                        bool[] pronadeno = new bool[5];
                         for(int l = 0; l < niz.Length; l++)
                         {
                             switch (k)
@@ -56,7 +57,7 @@ namespace _13._10._2021
                                         if (i + l < 50)
                                             if (Polje[i+l, j] == niz[l])
                                             {
-                                               // Console.WriteLine("Pronadeno slovo: " + niz[l]);
+                                                Console.WriteLine("Pronadeno slovo: " + niz[l]);
                                                 pronadeno[l] = true;
                                             }
                                             else
@@ -70,7 +71,7 @@ namespace _13._10._2021
                                         if(j + l < 50)
                                             if (Polje[i, j+l] == niz[l])
                                             {
-                                                //Console.WriteLine("Pronadeno slovo: " + niz[l]);
+                                                Console.WriteLine("Pronadeno slovo: " + niz[l]);
                                                 pronadeno[l] = true;
                                             }
                                             else
@@ -84,7 +85,7 @@ namespace _13._10._2021
                                         if(i - l > 0)
                                             if (Polje[i - l, j] == niz[l])
                                             {
-                                                //Console.WriteLine("Pronadeno slovo: " + niz[l]);
+                                                Console.WriteLine("Pronadeno slovo: " + niz[l]);
                                                 pronadeno[l] = true;
                                             }
                                             else
@@ -98,7 +99,7 @@ namespace _13._10._2021
                                         if(j - l > 0)
                                             if (Polje[i, j - l] == niz[l])
                                             {
-                                                //Console.WriteLine("Pronadeno slovo: " + niz[l]);
+                                                Console.WriteLine("Pronadeno slovo: " + niz[l]);
                                                 pronadeno[l] = true;
                                             }
                                             else
@@ -142,7 +143,7 @@ namespace _13._10._2021
             }
 
             Console.WriteLine(niz);
-            Console.WriteLine("[" + niz + "] Pronaden: " + brojac + " puta");
+            Console.WriteLine("[" + niz.ToString() + "] Pronaden: " + brojac + " puta");
         }
     }
 }

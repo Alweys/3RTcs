@@ -1,0 +1,11 @@
+D:\3.RT\Programiranje\8.3.2022\8.3.2022\bin\Debug\8.3.2022.exe.config
+D:\3.RT\Programiranje\8.3.2022\8.3.2022\bin\Debug\8.3.2022.exe
+D:\3.RT\Programiranje\8.3.2022\8.3.2022\bin\Debug\8.3.2022.pdb
+D:\3.RT\Programiranje\8.3.2022\8.3.2022\obj\Debug\8.3.2022.csproj.AssemblyReference.cache
+D:\3.RT\Programiranje\8.3.2022\8.3.2022\obj\Debug\8.3.2022.csproj.SuggestedBindingRedirects.cache
+D:\3.RT\Programiranje\8.3.2022\8.3.2022\obj\Debug\_8._3._2022.Form1.resources
+D:\3.RT\Programiranje\8.3.2022\8.3.2022\obj\Debug\_8._3._2022.Properties.Resources.resources
+D:\3.RT\Programiranje\8.3.2022\8.3.2022\obj\Debug\8.3.2022.csproj.GenerateResource.cache
+D:\3.RT\Programiranje\8.3.2022\8.3.2022\obj\Debug\8.3.2022.csproj.CoreCompileInputs.cache
+D:\3.RT\Programiranje\8.3.2022\8.3.2022\obj\Debug\8.3.2022.exe
+D:\3.RT\Programiranje\8.3.2022\8.3.2022\obj\Debug\8.3.2022.pdb
